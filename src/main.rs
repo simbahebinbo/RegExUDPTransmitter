@@ -15,6 +15,9 @@ extern "C" {
 }
 
 fn main() {
+    //     	\d{4}: 匹配4个数字。
+    //     	([^\d\s]{3,11}): 匹配3到11个不包含数字和空白字符的字符串，并捕获为结果字符串。
+    //     	(?=\S): 确保结果字符串右侧相邻的字符串不为空。
     let pattern = CString::new(r"\d{4}([^\d\s]{3,11})(?=\S)").unwrap();
     let subject = CString::new("a;jhgoqoghqoj0329 u0tyu10hg0h9Y0Y9827342482y(Y0y(G)_)lajf;lqjfgqhgpqjopjqa=)*(^!@#$%^&*())9999999").unwrap();
 
