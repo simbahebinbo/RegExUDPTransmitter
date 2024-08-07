@@ -1,0 +1,18 @@
+[package]
+name = "reg_ex_udp_transmitter"
+version = "0.1.0"
+authors = ["lansheng228"]
+edition = "2021"
+description = ""
+repository = "https://github.com/simbahebinbo/RegExUDPTransmitter"
+license = "Apache-2.0"
+homepage = "https://github.com/simbahebinbo/"
+documentation = ""
+
+
+[dependencies]
+libc = "0.2.155"
+
+[dev-dependencies]
+assert_cmd = "2.0.15"
+assert_matches = "1.5.0"
